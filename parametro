@@ -1,0 +1,410 @@
+{
+  "schemaVersion": 1,
+  "description": "Catálogo multiblockchain. deploySupported só indica módulos com implementação e testes locais; Solana permanece restrita à Devnet.",
+  "defaultModule": "evm",
+  "networks": [
+    {
+      "key": "polygon",
+      "name": "Polygon PoS",
+      "family": "evm",
+      "module": "evm",
+      "chainId": 137,
+      "nativeCurrency": {
+        "name": "POL",
+        "symbol": "POL",
+        "decimals": 18
+      },
+      "rpc": {
+        "default": "https://polygon-bor-rpc.publicnode.com",
+        "env": "RPC_URL"
+      },
+      "explorer": "https://polygonscan.com",
+      "enabled": true,
+      "deploySupported": true,
+      "environment": "mainnet",
+      "tokenStandards": [
+        "ERC-20"
+      ]
+    },
+    {
+      "key": "ethereum",
+      "name": "Ethereum Mainnet",
+      "family": "evm",
+      "module": "evm",
+      "chainId": 1,
+      "nativeCurrency": {
+        "name": "Ether",
+        "symbol": "ETH",
+        "decimals": 18
+      },
+      "rpc": {
+        "default": "https://ethereum-rpc.publicnode.com",
+        "env": "RPC_URL"
+      },
+      "explorer": "https://etherscan.io",
+      "enabled": true,
+      "deploySupported": true,
+      "environment": "mainnet",
+      "tokenStandards": [
+        "ERC-20"
+      ]
+    },
+    {
+      "key": "bnb",
+      "name": "BNB Smart Chain",
+      "family": "evm",
+      "module": "evm",
+      "chainId": 56,
+      "nativeCurrency": {
+        "name": "BNB",
+        "symbol": "BNB",
+        "decimals": 18
+      },
+      "rpc": {
+        "default": "https://bsc-rpc.publicnode.com",
+        "env": "RPC_URL"
+      },
+      "explorer": "https://bscscan.com",
+      "enabled": true,
+      "deploySupported": true,
+      "environment": "mainnet",
+      "tokenStandards": [
+        "ERC-20"
+      ]
+    },
+    {
+      "key": "arbitrum",
+      "name": "Arbitrum One",
+      "family": "evm",
+      "module": "evm",
+      "chainId": 42161,
+      "nativeCurrency": {
+        "name": "Ether",
+        "symbol": "ETH",
+        "decimals": 18
+      },
+      "rpc": {
+        "default": "https://arbitrum-one-rpc.publicnode.com",
+        "env": "RPC_URL"
+      },
+      "explorer": "https://arbiscan.io",
+      "enabled": true,
+      "deploySupported": true,
+      "environment": "mainnet",
+      "tokenStandards": [
+        "ERC-20"
+      ]
+    },
+    {
+      "key": "optimism",
+      "name": "OP Mainnet",
+      "family": "evm",
+      "module": "evm",
+      "chainId": 10,
+      "nativeCurrency": {
+        "name": "Ether",
+        "symbol": "ETH",
+        "decimals": 18
+      },
+      "rpc": {
+        "default": "https://optimism-rpc.publicnode.com",
+        "env": "RPC_URL"
+      },
+      "explorer": "https://optimistic.etherscan.io",
+      "enabled": true,
+      "deploySupported": true,
+      "environment": "mainnet",
+      "tokenStandards": [
+        "ERC-20"
+      ]
+    },
+    {
+      "key": "base",
+      "name": "Base",
+      "family": "evm",
+      "module": "evm",
+      "chainId": 8453,
+      "nativeCurrency": {
+        "name": "Ether",
+        "symbol": "ETH",
+        "decimals": 18
+      },
+      "rpc": {
+        "default": "https://base-rpc.publicnode.com",
+        "env": "RPC_URL"
+      },
+      "explorer": "https://basescan.org",
+      "enabled": true,
+      "deploySupported": true,
+      "environment": "mainnet",
+      "tokenStandards": [
+        "ERC-20"
+      ]
+    },
+    {
+      "key": "avalanche",
+      "name": "Avalanche C-Chain",
+      "family": "evm",
+      "module": "evm",
+      "chainId": 43114,
+      "nativeCurrency": {
+        "name": "Avalanche",
+        "symbol": "AVAX",
+        "decimals": 18
+      },
+      "rpc": {
+        "default": "https://avalanche-c-chain-rpc.publicnode.com",
+        "env": "RPC_URL"
+      },
+      "explorer": "https://snowtrace.io",
+      "enabled": true,
+      "deploySupported": true,
+      "environment": "mainnet",
+      "tokenStandards": [
+        "ERC-20"
+      ]
+    },
+    {
+      "key": "solana",
+      "name": "Solana Devnet",
+      "family": "solana",
+      "module": "solana",
+      "chainId": null,
+      "nativeCurrency": {
+        "name": "Solana",
+        "symbol": "SOL",
+        "decimals": 9
+      },
+      "rpc": {
+        "default": "https://api.devnet.solana.com",
+        "env": "SOLANA_RPC_URL"
+      },
+      "explorer": "https://explorer.solana.com",
+      "enabled": true,
+      "deploySupported": true,
+      "reason": "Deploy habilitado somente em Devnet. Token-2022 sem extensões adicionais; metadados on-chain ainda não implementados.",
+      "environment": "devnet",
+      "tokenStandards": [
+        "SPL Token",
+        "Token-2022"
+      ]
+    },
+    {
+      "key": "solana-mainnet",
+      "name": "Solana Mainnet",
+      "family": "solana",
+      "module": "solana",
+      "chainId": null,
+      "nativeCurrency": {
+        "name": "Solana",
+        "symbol": "SOL",
+        "decimals": 9
+      },
+      "rpc": {
+        "default": "",
+        "env": "SOLANA_RPC_URL"
+      },
+      "explorer": "https://explorer.solana.com",
+      "environment": "mainnet",
+      "enabled": false,
+      "deploySupported": false,
+      "tokenStandards": [
+        "SPL Token",
+        "Token-2022"
+      ],
+      "reason": "Mainnet bloqueada nesta versão; requer validação de produção e liberação explícita."
+    },
+    {
+      "key": "tron",
+      "name": "TRON",
+      "family": "non-evm",
+      "module": "tron",
+      "chainId": null,
+      "nativeCurrency": {
+        "name": "TRX",
+        "symbol": "TRX",
+        "decimals": 6
+      },
+      "rpc": {
+        "default": "",
+        "env": "RPC_URL"
+      },
+      "explorer": "https://tronscan.org",
+      "enabled": false,
+      "deploySupported": false,
+      "reason": "Adaptador de diagnóstico; deploy TRC-20 não implementado.",
+      "environment": "testnet",
+      "tokenStandards": [
+        "TRC-20"
+      ]
+    },
+    {
+      "key": "sui",
+      "name": "Sui",
+      "family": "non-evm",
+      "module": "sui",
+      "chainId": null,
+      "nativeCurrency": {
+        "name": "SUI",
+        "symbol": "SUI",
+        "decimals": 9
+      },
+      "rpc": {
+        "default": "",
+        "env": "RPC_URL"
+      },
+      "explorer": "https://suiscan.xyz",
+      "enabled": false,
+      "deploySupported": false,
+      "reason": "Adaptador de diagnóstico; pacote Move e publicação não implementados.",
+      "environment": "testnet",
+      "tokenStandards": [
+        "Coin / Move"
+      ]
+    },
+    {
+      "key": "aptos",
+      "name": "Aptos",
+      "family": "non-evm",
+      "module": "aptos",
+      "chainId": null,
+      "nativeCurrency": {
+        "name": "APT",
+        "symbol": "APT",
+        "decimals": 8
+      },
+      "rpc": {
+        "default": "",
+        "env": "RPC_URL"
+      },
+      "explorer": "https://explorer.aptoslabs.com",
+      "enabled": false,
+      "deploySupported": false,
+      "reason": "Adaptador de diagnóstico; publicação Fungible Asset não implementada.",
+      "environment": "testnet",
+      "tokenStandards": [
+        "Fungible Asset / Move"
+      ]
+    },
+    {
+      "key": "ton",
+      "name": "TON Testnet",
+      "family": "ton",
+      "module": "ton",
+      "chainId": null,
+      "nativeCurrency": {
+        "name": "Toncoin",
+        "symbol": "TON",
+        "decimals": 9
+      },
+      "rpc": {
+        "default": "",
+        "env": "TON_RPC_URL"
+      },
+      "explorer": "https://testnet.tonscan.org",
+      "environment": "testnet",
+      "enabled": false,
+      "deploySupported": false,
+      "tokenStandards": [
+        "Jettons"
+      ],
+      "reason": "Adaptador de diagnóstico; Jetton deploy não implementado."
+    },
+    {
+      "key": "ton-mainnet",
+      "name": "TON Mainnet",
+      "family": "ton",
+      "module": "ton",
+      "chainId": null,
+      "nativeCurrency": {
+        "name": "Toncoin",
+        "symbol": "TON",
+        "decimals": 9
+      },
+      "rpc": {
+        "default": "",
+        "env": "TON_RPC_URL"
+      },
+      "explorer": "https://tonscan.org",
+      "environment": "mainnet",
+      "enabled": false,
+      "deploySupported": false,
+      "tokenStandards": [
+        "Jettons"
+      ],
+      "reason": "Mainnet desabilitada até implementação e testes do módulo TON."
+    },
+    {
+      "key": "tron-mainnet",
+      "name": "TRON Mainnet",
+      "family": "tron",
+      "module": "tron",
+      "chainId": null,
+      "nativeCurrency": {
+        "name": "TRON",
+        "symbol": "TRX",
+        "decimals": 6
+      },
+      "rpc": {
+        "default": "",
+        "env": "TRON_RPC_URL"
+      },
+      "explorer": "https://tronscan.org",
+      "environment": "mainnet",
+      "enabled": false,
+      "deploySupported": false,
+      "tokenStandards": [
+        "TRC-20"
+      ],
+      "reason": "Mainnet desabilitada até implementação e testes do módulo TRON."
+    },
+    {
+      "key": "sui-mainnet",
+      "name": "Sui Mainnet",
+      "family": "sui",
+      "module": "sui",
+      "chainId": null,
+      "nativeCurrency": {
+        "name": "Sui",
+        "symbol": "SUI",
+        "decimals": 9
+      },
+      "rpc": {
+        "default": "",
+        "env": "SUI_RPC_URL"
+      },
+      "explorer": "https://suiscan.xyz",
+      "environment": "mainnet",
+      "enabled": false,
+      "deploySupported": false,
+      "tokenStandards": [
+        "Coin / Move"
+      ],
+      "reason": "Mainnet desabilitada até implementação e testes do módulo Sui."
+    },
+    {
+      "key": "aptos-mainnet",
+      "name": "Aptos Mainnet",
+      "family": "aptos",
+      "module": "aptos",
+      "chainId": null,
+      "nativeCurrency": {
+        "name": "Aptos",
+        "symbol": "APT",
+        "decimals": 8
+      },
+      "rpc": {
+        "default": "",
+        "env": "APTOS_RPC_URL"
+      },
+      "explorer": "https://explorer.aptoslabs.com",
+      "environment": "mainnet",
+      "enabled": false,
+      "deploySupported": false,
+      "tokenStandards": [
+        "Fungible Asset / Move"
+      ],
+      "reason": "Mainnet desabilitada até implementação e testes do módulo Aptos."
+    }
+  ]
+}

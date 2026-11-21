@@ -1,0 +1,12 @@
+{
+  "name": "unic-cripton-solana-module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Módulo Devnet para criação de mint SPL Token e Token-2022",
+  "engines": { "node": ">=20" },
+  "scripts": { "test": "node --test test/*.test.js", "validate": "node validate.js" },
+  "dependencies": {
+    "@solana/spl-token": "0.4.14",
+    "@solana/web3.js": "1.98.4"
+  }
+}

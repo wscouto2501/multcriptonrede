@@ -1,0 +1,26 @@
+# Segredos e carteiras
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.keystore
+*mnemonic*
+*seed*
+*wallet*.json
+id.json
+
+# Node / builds
+node_modules/
+**/node_modules/
+cache/
+artifacts/
+coverage/
+dist/
+build/
+
+# Configurações locais e resultados sensíveis
+.token-config.json
+.solana-config.json
+*.log
+.DS_Store
